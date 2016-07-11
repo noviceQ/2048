@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1609D4581D3099D6007F3AF2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1609D4571D3099D6007F3AF2 /* main.swift */; };
 		161134471D2FDDCC00A08FB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161134461D2FDDCC00A08FB9 /* AppDelegate.swift */; };
 		161134491D2FDDCC00A08FB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161134481D2FDDCC00A08FB9 /* ViewController.swift */; };
 		1611344C1D2FDDCC00A08FB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1611344A1D2FDDCC00A08FB9 /* Main.storyboard */; };
@@ -14,6 +15,14 @@
 		161134511D2FDDCC00A08FB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1611344F1D2FDDCC00A08FB9 /* LaunchScreen.storyboard */; };
 		1611345C1D2FDDCC00A08FB9 /* Game2048Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1611345B1D2FDDCC00A08FB9 /* Game2048Tests.swift */; };
 		161134671D2FDDCC00A08FB9 /* Game2048UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161134661D2FDDCC00A08FB9 /* Game2048UITests.swift */; };
+		161134751D2FE08600A08FB9 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161134741D2FE08600A08FB9 /* MainController.swift */; };
+		1611347F1D2FE3F100A08FB9 /* ImageResource.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1611347E1D2FE3F100A08FB9 /* ImageResource.xcassets */; };
+		161134831D2FE68F00A08FB9 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161134811D2FE68F00A08FB9 /* GameViewController.swift */; };
+		161134841D2FE68F00A08FB9 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 161134821D2FE68F00A08FB9 /* GameViewController.xib */; };
+		161134881D2FE69600A08FB9 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161134861D2FE69600A08FB9 /* SettingViewController.swift */; };
+		161134891D2FE69600A08FB9 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 161134871D2FE69600A08FB9 /* SettingViewController.xib */; };
+		1611348C1D2FF71900A08FB9 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1611348B1D2FF71900A08FB9 /* GameModel.swift */; };
+		1611348F1D2FFCDA00A08FB9 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1611348E1D2FFCDA00A08FB9 /* TileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +42,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1609D4531D3099D6007F3AF2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1609D4551D3099D6007F3AF2 /* testCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testCode; sourceTree = BUILT_PRODUCTS_DIR; };
+		1609D4571D3099D6007F3AF2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		161134431D2FDDCC00A08FB9 /* Game2048.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Game2048.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		161134461D2FDDCC00A08FB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		161134481D2FDDCC00A08FB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,9 +70,24 @@
 		161134621D2FDDCC00A08FB9 /* Game2048UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Game2048UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		161134661D2FDDCC00A08FB9 /* Game2048UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game2048UITests.swift; sourceTree = "<group>"; };
 		161134681D2FDDCC00A08FB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		161134741D2FE08600A08FB9 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		1611347E1D2FE3F100A08FB9 /* ImageResource.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ImageResource.xcassets; sourceTree = "<group>"; };
+		161134811D2FE68F00A08FB9 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		161134821D2FE68F00A08FB9 /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
+		161134861D2FE69600A08FB9 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		161134871D2FE69600A08FB9 /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		1611348B1D2FF71900A08FB9 /* GameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		1611348E1D2FFCDA00A08FB9 /* TileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1609D4521D3099D6007F3AF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		161134401D2FDDCC00A08FB9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -74,12 +112,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1609D4561D3099D6007F3AF2 /* testCode */ = {
+			isa = PBXGroup;
+			children = (
+				1609D4571D3099D6007F3AF2 /* main.swift */,
+			);
+			path = testCode;
+			sourceTree = "<group>";
+		};
 		1611343A1D2FDDCC00A08FB9 = {
 			isa = PBXGroup;
 			children = (
 				161134451D2FDDCC00A08FB9 /* Game2048 */,
 				1611345A1D2FDDCC00A08FB9 /* Game2048Tests */,
 				161134651D2FDDCC00A08FB9 /* Game2048UITests */,
+				1609D4561D3099D6007F3AF2 /* testCode */,
 				161134441D2FDDCC00A08FB9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +137,7 @@
 				161134431D2FDDCC00A08FB9 /* Game2048.app */,
 				161134571D2FDDCC00A08FB9 /* Game2048Tests.xctest */,
 				161134621D2FDDCC00A08FB9 /* Game2048UITests.xctest */,
+				1609D4551D3099D6007F3AF2 /* testCode */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,10 +145,14 @@
 		161134451D2FDDCC00A08FB9 /* Game2048 */ = {
 			isa = PBXGroup;
 			children = (
+				161134851D2FE69600A08FB9 /* setting */,
+				161134801D2FE68F00A08FB9 /* game */,
 				161134461D2FDDCC00A08FB9 /* AppDelegate.swift */,
 				161134481D2FDDCC00A08FB9 /* ViewController.swift */,
+				161134741D2FE08600A08FB9 /* MainController.swift */,
 				1611344A1D2FDDCC00A08FB9 /* Main.storyboard */,
 				1611344D1D2FDDCC00A08FB9 /* Assets.xcassets */,
+				1611347E1D2FE3F100A08FB9 /* ImageResource.xcassets */,
 				1611344F1D2FDDCC00A08FB9 /* LaunchScreen.storyboard */,
 				161134521D2FDDCC00A08FB9 /* Info.plist */,
 			);
@@ -125,9 +177,62 @@
 			path = Game2048UITests;
 			sourceTree = "<group>";
 		};
+		161134801D2FE68F00A08FB9 /* game */ = {
+			isa = PBXGroup;
+			children = (
+				1611348D1D2FFCAA00A08FB9 /* View */,
+				1611348A1D2FF70400A08FB9 /* Model */,
+				161134811D2FE68F00A08FB9 /* GameViewController.swift */,
+				161134821D2FE68F00A08FB9 /* GameViewController.xib */,
+			);
+			path = game;
+			sourceTree = "<group>";
+		};
+		161134851D2FE69600A08FB9 /* setting */ = {
+			isa = PBXGroup;
+			children = (
+				161134861D2FE69600A08FB9 /* SettingViewController.swift */,
+				161134871D2FE69600A08FB9 /* SettingViewController.xib */,
+			);
+			path = setting;
+			sourceTree = "<group>";
+		};
+		1611348A1D2FF70400A08FB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1611348B1D2FF71900A08FB9 /* GameModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1611348D1D2FFCAA00A08FB9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1611348E1D2FFCDA00A08FB9 /* TileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1609D4541D3099D6007F3AF2 /* testCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1609D45B1D3099D6007F3AF2 /* Build configuration list for PBXNativeTarget "testCode" */;
+			buildPhases = (
+				1609D4511D3099D6007F3AF2 /* Sources */,
+				1609D4521D3099D6007F3AF2 /* Frameworks */,
+				1609D4531D3099D6007F3AF2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testCode;
+			productName = testCode;
+			productReference = 1609D4551D3099D6007F3AF2 /* testCode */;
+			productType = "com.apple.product-type.tool";
+		};
 		161134421D2FDDCC00A08FB9 /* Game2048 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1611346B1D2FDDCC00A08FB9 /* Build configuration list for PBXNativeTarget "Game2048" */;
@@ -191,6 +296,9 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = xinmei;
 				TargetAttributes = {
+					1609D4541D3099D6007F3AF2 = {
+						CreatedOnToolsVersion = 7.3;
+					};
 					161134421D2FDDCC00A08FB9 = {
 						CreatedOnToolsVersion = 7.3;
 					};
@@ -220,6 +328,7 @@
 				161134421D2FDDCC00A08FB9 /* Game2048 */,
 				161134561D2FDDCC00A08FB9 /* Game2048Tests */,
 				161134611D2FDDCC00A08FB9 /* Game2048UITests */,
+				1609D4541D3099D6007F3AF2 /* testCode */,
 			);
 		};
 /* End PBXProject section */
@@ -230,8 +339,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				161134511D2FDDCC00A08FB9 /* LaunchScreen.storyboard in Resources */,
+				161134891D2FE69600A08FB9 /* SettingViewController.xib in Resources */,
 				1611344E1D2FDDCC00A08FB9 /* Assets.xcassets in Resources */,
 				1611344C1D2FDDCC00A08FB9 /* Main.storyboard in Resources */,
+				1611347F1D2FE3F100A08FB9 /* ImageResource.xcassets in Resources */,
+				161134841D2FE68F00A08FB9 /* GameViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,12 +364,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1609D4511D3099D6007F3AF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1609D4581D3099D6007F3AF2 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1611343F1D2FDDCC00A08FB9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				161134881D2FE69600A08FB9 /* SettingViewController.swift in Sources */,
+				1611348F1D2FFCDA00A08FB9 /* TileView.swift in Sources */,
+				161134831D2FE68F00A08FB9 /* GameViewController.swift in Sources */,
 				161134491D2FDDCC00A08FB9 /* ViewController.swift in Sources */,
+				161134751D2FE08600A08FB9 /* MainController.swift in Sources */,
 				161134471D2FDDCC00A08FB9 /* AppDelegate.swift in Sources */,
+				1611348C1D2FF71900A08FB9 /* GameModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +437,26 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1609D4591D3099D6007F3AF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1609D45A1D3099D6007F3AF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		161134691D2FDDCC00A08FB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -466,6 +611,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1609D45B1D3099D6007F3AF2 /* Build configuration list for PBXNativeTarget "testCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1609D4591D3099D6007F3AF2 /* Debug */,
+				1609D45A1D3099D6007F3AF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		1611343E1D2FDDCC00A08FB9 /* Build configuration list for PBXProject "Game2048" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -482,6 +635,7 @@
 				1611346D1D2FDDCC00A08FB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1611346E1D2FDDCC00A08FB9 /* Build configuration list for PBXNativeTarget "Game2048Tests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +644,7 @@
 				161134701D2FDDCC00A08FB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		161134711D2FDDCC00A08FB9 /* Build configuration list for PBXNativeTarget "Game2048UITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +653,7 @@
 				161134731D2FDDCC00A08FB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

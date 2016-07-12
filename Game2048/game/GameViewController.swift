@@ -28,17 +28,17 @@ class GameViewController: UIViewController {
             self.genNumber()
         }
         
-        let swipeUp:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action:#selector(GameViewController.swipeUp))
+        let swipeUp:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action:Selector("swipeUp"))
         swipeUp.numberOfTouchesRequired = 1
         swipeUp.direction = UISwipeGestureRecognizerDirection.Up
         self.containerView.addGestureRecognizer(swipeUp)
         
-        let swipDown:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self,action: #selector(GameViewController.swipDown))
+        let swipDown:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self,action:Selector("swipDown"))
         swipDown.direction = UISwipeGestureRecognizerDirection.Down
         swipDown.numberOfTouchesRequired = 1
         self.containerView.addGestureRecognizer(swipDown)
-        
-        let swipLeft:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action:#selector(GameViewController.swipLeft))
+    
+        let swipLeft:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action:Selector("swipLeft"))
         swipLeft.numberOfTouchesRequired = 1
         swipLeft.direction = UISwipeGestureRecognizerDirection.Left
         self.containerView.addGestureRecognizer(swipLeft)
@@ -67,21 +67,20 @@ class GameViewController: UIViewController {
                 滑动手势事件
      */
     
-    func swipeUp() {
+   func swipeUp() {
        print("swipeUp")
-       genNumber()
-       gameModel.swipUpFlow()
+       gameModel.comindUp()
        resetUI()
        initUI()
-      
+       genNumber()
     }
     
     func swipDown() {
-        genNumber()
         print("swipdown")
-        gameModel.swipDownFlow()
+        gameModel.comindDown()
         resetUI()
         initUI()
+        genNumber()
     }
     
     func swipLeft(){

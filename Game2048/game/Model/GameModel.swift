@@ -114,4 +114,32 @@ class GameModel {
         printTiles()
     }
     
+    func comindUp() {
+        swipUpFlow()
+        for col in 0..<self.dimension {
+            for row in 0..<self.dimension - 1 {
+                if tiles[row,col] == tiles[row+1,col] {
+                    tiles[row,col] = tiles[row , col] + tiles[row+1,col]
+                    tiles[row + 1,col] = 0
+                }
+            }
+        }
+        swipUpFlow()
+    }
+    
+    func comindDown() {
+        swipDownFlow()
+        for col in 0..<self.dimension {
+            for row in (1..<self.dimension).reverse() {
+                if tiles[row,col] == tiles[row - 1,col] {
+                    tiles[row,col] = tiles[row,col] + tiles[row-1,col]
+                    tiles[row - 1,col] = 0
+                }
+            }
+        }
+        swipDownFlow()
+    }
+    
+    
+    
 }
